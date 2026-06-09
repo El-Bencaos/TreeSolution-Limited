@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Solution Limited | Enterprise Environmental & Geospatial Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Syne', 'sans-serif'],
+                    },
+                    colors: {
+                        forest: '#0B2F1D',
+                        tealAccent: '#008080',
+                        mint: '#2ECC71',
+                        slateCharcoal: '#1A1A1A',
+                        ivory: '#FAFAFA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glassmorphism {
+            backdrop-filter: blur(12px) saturate(180%);
+            background: rgba(11, 47, 29, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(26,26,26,0.6) 0%, rgba(11,47,29,0.95) 100%);
+        }
+    </style>
+</head>
+<body class="bg-ivory text-slateCharcoal font-sans antialiased selection:bg-tealAccent selection:text-white">
+
+    <header class="fixed w-full z-50 transition-all duration-300 bg-forest/90 backdrop-blur-md border-b border-white/10 text-white">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-mint to-tealAccent flex items-center justify-center font-heading text-xl font-extrabold text-forest">T</div>
+                <span class="font-heading text-xl tracking-tight font-bold">TREE SOLUTION</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#" class="text-white border-b-2 border-mint pb-1">Home</a>
+                <a href="#" class="hover:text-white transition-colors">About</a>
+                <a href="#" class="hover:text-white transition-colors">Services</a>
+                <a href="#" class="hover:text-white transition-colors">Projects</a>
+                <a href="#" class="hover:text-white transition-colors">Resources</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden sm:inline-block text-sm font-medium hover:text-mint transition-colors">Client Portal</a>
+                <button class="bg-mint text-forest font-semibold px-5 h-11 rounded-lg text-sm hover:bg-white hover:shadow-lg hover:shadow-mint/20 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Request Consultation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-zinc-900 text-white">
+        <div class="absolute inset-0 z-0 opacity-40 bg-[radial-gradient(#008080_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-luminosity" style="background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 hero-gradient z-10"></div>
+
+        <div class="relative z-20 max-w-5xl mx-auto px-6 text-center pt-12">
+            <span class="inline-flex items-center space-x-2 bg-white/10 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-mint border border-white/10 mb-6 backdrop-blur-sm">
+                <span class="w-2 h-2 rounded-full bg-mint animate-pulse"></span>
+                <span>Pan-African Spatial Intelligence & Consulting</span>
+            </span>
+            <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl mx-auto leading-[1.1] mb-6">
+                Advancing African Sustainability Through <span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-tealAccent">Spatial Intelligence</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+                Tree Solution Limited delivers enterprise-level GIS mapping, rigorous ESIA compliance, and end-to-end carbon market advisory services to derisk investments and protect ecosystems.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="w-full sm:w-auto bg-mint text-forest font-bold px-8 py-4 rounded-xl shadow-lg shadow-mint/20 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                    Request a Technical Consultation
+                </button>
+                <button class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 backdrop-blur-md transition-all duration-300">
+                    Download Corporate Profile
+                </button>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce opacity-60">
+            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center p-1">
+                <div class="w-1.5 h-3 bg-mint rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-forest relative z-30 border-y border-white/10 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center divide-x-0 lg:divide-x divide-white/10">
+                <div class="space-y-2">
+                    <div class="font-heading text-4xl md:text-5xl font-extrabold text-mint">500,000+</div>
+                    <div class="text-xs md:text-sm font-medium tracking-wider text-gray-400 uppercase">Hectares Assessed</div>
+                </div>
+                <div class="space-y-2 lg:pl-6">
+                    <div class="font-heading text-4xl md:text-5xl font-extrabold text-tealAccent">120+</div>
+                    <div class="text-xs md:text-sm font-medium tracking-wider text-gray-400 uppercase">Enterprise Projects</div>
+                </div>
+                <div class="space-y-2 lg:pl-6">
+                    <div class="font-heading text-4xl md:text-5xl font-extrabold text-mint">100%</div>
+                    <div class="text-xs md:text-sm font-medium tracking-wider text-gray-400 uppercase">ESIA Approval Track Record</div>
+                </div>
+                <div class="space-y-2 lg:pl-6">
+                    <div class="font-heading text-4xl md:text-5xl font-extrabold text-tealAccent">5M+</div>
+                    <div class="text-xs md:text-sm font-medium tracking-wider text-gray-400 uppercase">Tonnes CO2 Quantified</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mb-16">
+                <span class="text-tealAccent font-bold text-sm tracking-widest uppercase block mb-3">Our Expertise</span>
+                <h2 class="font-heading text-3xl md:text-5xl font-extrabold text-forest tracking-tight">
+                    Integrated Solutions for Complex Ecosystems
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group bg-ivory p-8 md:p-10 rounded-2xl border border-gray-200/80 hover:border-tealAccent/30 hover:bg-white hover:shadow-xl hover:shadow-forest/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-tealAccent/10 text-tealAccent flex items-center justify-center mb-6 group-hover:bg-tealAccent group-hover:text-white transition-all duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-forest mb-4">Geospatial & Remote Sensing</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Advanced multi-spectral imagery analysis, LULCC analytics, high-precision drone mapping pipelines, and web-based enterprise GIS database frameworks.
+                        </p>
+                    </div>
+                    <a href="#" class="inline-flex items-center space-x-2 text-sm font-semibold text-tealAccent group-hover:text-forest transition-colors">
+                        <span>Explore Technical Capabilities</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="group bg-ivory p-8 md:p-10 rounded-2xl border border-gray-200/80 hover:border-mint/30 hover:bg-white hover:shadow-xl hover:shadow-forest/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-mint/10 text-forest flex items-center justify-center mb-6 group-hover:bg-mint transition-all duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-forest mb-4">ESIA & Regulatory Compliance</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Rigorous Environmental and Social Impact Assessments fully structured to align with domestic policies, World Bank standards, and IFC performance parameters.
+                        </p>
+                    </div>
+                    <a href="#" class="inline-flex items-center space-x-2 text-sm font-semibold text-tealAccent group-hover:text-forest transition-colors">
+                        <span>View Compliance Track Record</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="group bg-ivory p-8 md:p-10 rounded-2xl border border-gray-200/80 hover:border-tealAccent/30 hover:bg-white hover:shadow-xl hover:shadow-forest/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-tealAccent/10 text-tealAccent flex items-center justify-center mb-6 group-hover:bg-tealAccent group-hover:text-white transition-all duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.243 17.657l.707.707M6.343 6.364l.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-forest mb-4">Carbon Market Consulting & MRV</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            End-to-end asset structuring for nature-based solutions, baseline risk evaluation, and data pipelines built for Verra/VCS and Gold Standard methodologies.
+                        </p>
+                    </div>
+                    <a href="#" class="inline-flex items-center space-x-2 text-sm font-semibold text-tealAccent group-hover:text-forest transition-colors">
+                        <span>Assess Asset Viability</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="group bg-ivory p-8 md:p-10 rounded-2xl border border-gray-200/80 hover:border-mint/30 hover:bg-white hover:shadow-xl hover:shadow-forest/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-mint/10 text-forest flex items-center justify-center mb-6 group-hover:bg-mint transition-all duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 002-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-forest mb-4">Natural Resource & ESG Strategy</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Precision forest biometric inventories, climate adaptation models, and dynamic sustainability monitoring dashboards built for fast-moving corporate landscapes.
+                        </p>
+                    </div>
+                    <a href="#" class="inline-flex items-center space-x-2 text-sm font-semibold text-tealAccent group-hover:text-forest transition-colors">
+                        <span>Review Frameworks</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-forest text-white overflow-hidden relative">
+        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-mint font-bold text-sm tracking-widest uppercase block">Interactive Estimation</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-extrabold tracking-tight">Evaluate Your Project's Carbon Viability</h2>
+                <p class="text-gray-300 font-light leading-relaxed">
+                    Gain rapid insights into the carbon sequestration and asset generation potential of your acreage. Use our dynamic calculator matrix to simulate baseline asset values.
+                </p>
+                <div class="p-4 bg-white/5 rounded-xl border border-white/10 flex items-start space-x-3 text-xs text-gray-400">
+                    <svg class="w-5 h-5 text-tealAccent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span>Estimates are calibrated against standard ecological parameters for Southern African biomes and historical remote sensing indices.</span>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <div class="bg-slateCharcoal rounded-2xl border border-white/10 p-6 md:p-8 shadow-2xl relative">
+                    <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                        <div class="space-y-2">
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400">Project Ecotype</label>
+                            <select id="ecotype" class="w-full h-12 bg-forest/50 border border-white/10 rounded-lg px-4 text-sm font-medium focus:outline-none focus:border-mint transition-colors">
+                                <option value="reforestation">Reforestation (Native Species)</option>
+                                <option value="redd">REDD+ (Avoided Deforestation)</option>
+                                <option value="agroforestry">Sustainable Agroforestry Matrix</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400">Total Land Area (Hectares)</label>
+                            <input id="hectares" type="number" value="5000" min="10" class="w-full h-12 bg-forest/50 border border-white/10 rounded-lg px-4 text-sm font-medium focus:outline-none focus:border-mint transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="bg-forest/40 border border-white/5 rounded-xl p-6 mb-6 flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="text-center md:text-left">
+                            <span class="block text-xs font-medium uppercase tracking-wider text-gray-400 mb-1">Est. Annual Carbon Sequestration</span>
+                            <span class="font-heading text-3xl font-bold text-mint"><span id="co2-yield">22,500</span> <span class="text-lg font-sans font-normal text-white/70">tCO2e/yr</span></span>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <span class="block text-xs font-medium uppercase tracking-wider text-gray-400 mb-1">Estimated Base Value Projection</span>
+                            <span class="font-heading text-3xl font-bold text-tealAccent">$<span id="value-yield">270,000</span> <span class="text-lg font-sans font-normal text-white/70">USD/yr</span></span>
+                        </div>
+                    </div>
+
+                    <button class="w-full h-12 bg-gradient-to-r from-mint to-tealAccent text-forest font-bold rounded-lg text-sm shadow-md hover:shadow-xl transition-all duration-300">
+                        Unlock Verified Feasibility Analysis Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slateCharcoal text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-gradient-to-br from-forest to-zinc-900 rounded-3xl p-8 md:p-16 border border-white/10 flex flex-col lg:flex-row items-center justify-between gap-8 mb-16">
+                <div class="max-w-2xl space-y-4 text-center lg:text-left">
+                    <h2 class="font-heading text-3xl md:text-4xl font-extrabold tracking-tight">Ready to map your environmental path forward?</h2>
+                    <p class="text-gray-300 font-light">Partner with Africa's leading geospatial and environmental engineering team to manage risks and verify impacts.</p>
+                </div>
+                <div class="shrink-0 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 w-full lg:w-auto">
+                    <button class="w-full sm:w-auto px-8 h-14 bg-mint text-forest font-bold rounded-xl text-sm transition-all duration-300 hover:bg-white">Request Proposal</button>
+                    <button class="w-full sm:w-auto px-8 h-14 bg-white/10 hover:bg-white/20 border border-white/20 font-semibold rounded-xl text-sm transition-all duration-300">Contact Office</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12 border-b border-white/10">
+                <div class="col-span-2 md:col-span-1 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-mint flex items-center justify-center font-heading text-base font-extrabold text-forest">T</div>
+                        <span class="font-heading text-lg font-bold">TREE SOLUTION</span>
+                    </div>
+                    <p class="text-xs text-gray-400 font-light leading-relaxed">
+                        Deploying premium scientific standards and cloud geospatial infrastructure across major environmental vectors.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-300 font-light">
+                        <li><a href="#" class="hover:text-mint transition-colors">GIS & Remote Sensing</a></li>
+                        <li><a href="#" class="hover:text-mint transition-colors">ESIA Compliance</a></li>
+                        <li><a href="#" class="hover:text-mint transition-colors">Carbon Markets</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-300 font-light">
+                        <li><a href="#" class="hover:text-mint transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-mint transition-colors">Projects Matrix</a></li>
+                        <li><a href="#" class="hover:text-mint transition-colors">Careers Portal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm text-gray-300 font-light">
+                        <li class="flex items-center space-x-2">
+                            <span>Blantyre City, Malawi</span>
+                        </li>
+                        <li><a href="mailto:info@treesolutionmw.com" class="hover:text-mint transition-colors">info@treesolutionmw.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 Tree Solution Limited. All Rights Reserved. Engineered for excellence.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Charter</a>
+                    <a href="#" class="hover:text-white transition-colors">Regulatory Disclosures</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const ecotypeSelect = document.getElementById('ecotype');
+        const hectaresInput = document.getElementById('hectares');
+        const co2YieldDisplay = document.getElementById('co2-yield');
+        const valueYieldDisplay = document.getElementById('value-yield');
+
+        const factorMatrix = {
+            reforestation: { co2: 4.5, value: 12 },
+            redd: { co2: 2.8, value: 14 },
+            agroforestry: { co2: 3.2, value: 10 }
+        };
+
+        function calculateMetrics() {
+            const ecotype = ecotypeSelect.value;
+            const hectares = parseFloat(hectaresInput.value) || 0;
+            
+            const co2Result = Math.round(hectares * factorMatrix[ecotype].co2);
+            const valueResult = Math.round(co2Result * factorMatrix[ecotype].value);
+            
+            co2YieldDisplay.textContent = co2Result.toLocaleString();
+            valueYieldDisplay.textContent = valueResult.toLocaleString();
+        }
+
+        ecotypeSelect.addEventListener('change', calculateMetrics);
+        hectaresInput.addEventListener('input', calculateMetrics);
+    </script>
+</body>
+</html>
